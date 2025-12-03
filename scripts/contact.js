@@ -10,6 +10,7 @@ export function loadContact(){
     if(elem === "img"){
       child.src = src;
       child.alt = alt;
+      child.loading = "lazy";
     }
     return child;
   }

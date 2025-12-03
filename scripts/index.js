@@ -25,3 +25,5 @@ navButtons.addEventListener("click", (e) => {
         loadContact();
     }
 })
+
+//todo: one photo credit left to add in the contact page;

@@ -16,6 +16,7 @@ export function pageLoad(){
     const img = document.createElement("img");
     img.src = `${src}`;
     img.alt = `${alt}`;
+    img.loading = "lazy";
 
     const figCaption = document.createElement("figcaption");
     figCaption.innerHTML = `${figHtml}`;
