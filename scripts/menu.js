@@ -27,10 +27,7 @@ export function loadMenu(){
     const p = document.createElement("p");
     p.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam temporibus quo modi sint dignissimos, nostrum illum ea ratione porro velit aliquam odit assumenda vel suscipit quos aspernatur? Reprehenderit, magni eius.";
 
-    child.appendChild(img);
-    child.appendChild(figCaption);
-    child.appendChild(itemName);
-    child.appendChild(p);
+    child.append(img, figCaption,itemName, p);
 
     return child;
   }
@@ -40,8 +37,7 @@ export function loadMenu(){
   const menuHeader = newElem("h2", '', "Menu");
   const menuPara = newElem("p", '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum vitae itaque magni impedit repudiandae error laboriosam sunt qui exercitationem ullam illo sed sapiente fuga, dolore optio suscipit, soluta laudantium dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio consequuntur iste libero explicabo maiores facere, odit ipsum doloribus voluptatem veniam incidunt. Porro nemo soluta placeat laboriosam amet illo asperiores molestiae.')
 
-  menuInfoDiv.appendChild(menuHeader);
-  menuInfoDiv.appendChild(menuPara);
+  menuInfoDiv.append(menuHeader, menuPara);
   contentDiv.appendChild(menuInfoDiv);
 
   //menu-wrapper
@@ -60,12 +56,6 @@ export function loadMenu(){
 
   const item6 = menuItem("menu-items", "./images/youwoon-park-aPeyLdY2Pvo-unsplash.jpg", "menu6", `Photo by <a href="https://unsplash.com/@haberdoedas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Haberdoedas</a> on <a href="https://unsplash.com/photos/coffee-and-a-purple-smoothie-sit-on-a-table-md0RSAP2IIY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`, "Coffee6");
 
-  menuWrapper.appendChild(item1);
-  menuWrapper.appendChild(item2);
-  menuWrapper.appendChild(item3);
-  menuWrapper.appendChild(item4);
-  menuWrapper.appendChild(item5);
-  menuWrapper.appendChild(item6);
+  menuWrapper.append(item1, item2, item3, item4, item5, item6);
   contentDiv.appendChild(menuWrapper);
-
 }

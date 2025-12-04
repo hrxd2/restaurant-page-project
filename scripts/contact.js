@@ -37,18 +37,7 @@ export function loadContact(){
   const folowT = newElem("p", '', "Twitter: @cozycoffee");
   const folowI = newElem("p", '', 'Insta: @czycffe');
 
-  rightSection.appendChild(contactH2);
-  rightSection.appendChild(contactPara);
-  rightSection.appendChild(officeH3);
-  rightSection.appendChild(officePara);
-  rightSection.appendChild(supprotH3);
-  rightSection.appendChild(supportP);
-  rightSection.appendChild(supportMail);
-  rightSection.appendChild(followH);
-  rightSection.appendChild(folowT);
-  rightSection.appendChild(folowI);
-
-  aboutWrapper.appendChild(leftSection);
-  aboutWrapper.appendChild(rightSection);
-  contentDiv.appendChild(aboutWrapper);
+  rightSection.append(contactH2, contactPara, officeH3, officePara, supprotH3, supportP, supportMail, followH, folowT, folowI);
+  aboutWrapper.append(leftSection, rightSection);
+  contentDiv.append(aboutWrapper);
 }
