@@ -1,3 +1,12 @@
+import aboutImage from "../images/about-image.jpg";
+import photo1 from "../images/photo1.jpg";
+import photo2 from "../images/photo2.jpg";
+import photo3 from "../images/photo3.jpg";
+
+const aboutImage = aboutImage;
+const photo1 = photo1;
+const photo2 = photo2;
+const photo3 = photo3;
 
 export function pageLoad(){
   
@@ -14,7 +23,7 @@ export function pageLoad(){
     div.classList.add(`${className}`);
 
     const img = document.createElement("img");
-    img.src = `${src}`;
+    img.src = src;
     img.alt = `${alt}`;
     img.loading = "lazy";
 
@@ -34,7 +43,7 @@ export function pageLoad(){
 
   const aboutPara = newElem("p", 'pText', "Here, every cup is brewed with care, every aroma tells a story, and every visit feels like home. Whether you’re stopping by for a rich espresso, a smooth latte, or a quiet moment to unwind, Cozy Coffee is the place where comfort and flavor meet. Sit back, relax, and enjoy the experience.");
 
-  const imageDiv = imgDiv("image-section", "./images/about-image.jpg", "cafe-image", `Photo by <a href="https://unsplash.com/@subagjav?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rizky Subagja</a> on <a href="https://unsplash.com/photos/two-clear-drinking-glasses-on-top-of-brown-wooden-table-1k7TnX5GAww?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`
+  const imageDiv = imgDiv("image-section", aboutImage, "cafe-image", `Photo by <a href="https://unsplash.com/@subagjav?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rizky Subagja</a> on <a href="https://unsplash.com/photos/two-clear-drinking-glasses-on-top-of-brown-wooden-table-1k7TnX5GAww?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`
     );
 
   aboutDiv.append(aboutHeader, aboutPara);
@@ -52,11 +61,11 @@ export function pageLoad(){
 
   const sectionTwo = newElem("section", "popular-items");
 
-  const itemOne = imgDiv("image-wrapper", "./images/photo2.jpg", "famous-coffee", `Photo by <a href="https://unsplash.com/@subagjav?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rizky Subagja</a> on <a href="https://unsplash.com/photos/two-clear-drinking-glasses-on-top-of-brown-wooden-table-1k7TnX5GAww?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`);
+  const itemOne = imgDiv("image-wrapper", photo2, "famous-coffee", `Photo by <a href="https://unsplash.com/@subagjav?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rizky Subagja</a> on <a href="https://unsplash.com/photos/two-clear-drinking-glasses-on-top-of-brown-wooden-table-1k7TnX5GAww?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`);
   itemOne.appendChild(loremPara());
-  const itemTwo = imgDiv("image-wrapper", "./images/photo1.jpg", "famous-coffee2", `Photo by <a href="https://unsplash.com/@nate_dumlao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nathan Dumlao</a> on <a href="https://unsplash.com/photos/white-ceramic-cup-filled-with-coffee-beside-glass-of-water-ynwSQ9Bd6cA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`);
+  const itemTwo = imgDiv("image-wrapper", photo1, "famous-coffee2", `Photo by <a href="https://unsplash.com/@nate_dumlao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nathan Dumlao</a> on <a href="https://unsplash.com/photos/white-ceramic-cup-filled-with-coffee-beside-glass-of-water-ynwSQ9Bd6cA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`);
   itemTwo.appendChild(loremPara());
-  const itemThree = imgDiv("image-wrapper", "./images/photo3.jpg", "famous-coffee3", `Photo by <a href="https://unsplash.com/@nicsandman20?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nicholas Ng</a> on <a href="https://unsplash.com/photos/a-desk-with-a-laptop-computer-sitting-on-top-of-a-wooden-table-Jvnbz-5VO90?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`);
+  const itemThree = imgDiv("image-wrapper", photo3, "famous-coffee3", `Photo by <a href="https://unsplash.com/@nicsandman20?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nicholas Ng</a> on <a href="https://unsplash.com/photos/a-desk-with-a-laptop-computer-sitting-on-top-of-a-wooden-table-Jvnbz-5VO90?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`);
   itemThree.appendChild(loremPara());
 
   sectionTwo.append(itemOne, itemTwo, itemThree);
