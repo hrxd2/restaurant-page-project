@@ -1,3 +1,17 @@
+import menu1 from "../images/menu1.jpg"
+import menu2 from "../images/menu2.jpg"
+import menu3 from "../images/menu3.jpg"
+import menu4 from "../images/menu4.jpg"
+import menu5 from "../images/menu5.jpg"
+import menu6 from "../images/menu6.jpg"
+
+const menu1 = menu1;
+const menu2 = menu2;
+const menu3 = menu3;
+const menu4 = menu4;
+const menu5 = menu5;
+const menu6 = menu6;
+
 export function loadMenu(){
 
   const contentDiv = document.querySelector("#content");
@@ -43,18 +57,18 @@ export function loadMenu(){
   //menu-wrapper
   const menuWrapper = newElem("div", "menu-wrapper");
   
-  const item1 = menuItem("menu-items", `./images/menu1.jpg`, "menu1", `Photo by <a href="https://unsplash.com/@haberdoedas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Haberdoedas</a> on <a href="https://unsplash.com/photos/coffee-and-a-purple-smoothie-sit-on-a-table-md0RSAP2IIY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`, "Coffee1");
+  const item1 = menuItem("menu-items", menu1, "menu1", `Photo by <a href="https://unsplash.com/@haberdoedas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Haberdoedas</a> on <a href="https://unsplash.com/photos/coffee-and-a-purple-smoothie-sit-on-a-table-md0RSAP2IIY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`, "Coffee1");
 
-  const item2 = menuItem("menu-items", `./images/menu2.jpg`, "menu2", `Photo by <a href="https://unsplash.com/@haberdoedas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Haberdoedas</a> on <a href="https://unsplash.com/photos/coffee-and-a-purple-smoothie-sit-on-a-table-md0RSAP2IIY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`, "Muffins2");
+  const item2 = menuItem("menu-items", menu2, "menu2", `Photo by <a href="https://unsplash.com/@haberdoedas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Haberdoedas</a> on <a href="https://unsplash.com/photos/coffee-and-a-purple-smoothie-sit-on-a-table-md0RSAP2IIY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`, "Muffins2");
 
-  const item3 = menuItem("menu-items", "./images/menu3.jpg", "menu3", `Photo by <a href="https://unsplash.com/@haberdoedas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Haberdoedas</a> on <a href="https://unsplash.com/photos/coffee-and-a-purple-smoothie-sit-on-a-table-md0RSAP2IIY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  const item3 = menuItem("menu-items", menu3, "menu3", `Photo by <a href="https://unsplash.com/@haberdoedas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Haberdoedas</a> on <a href="https://unsplash.com/photos/coffee-and-a-purple-smoothie-sit-on-a-table-md0RSAP2IIY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
  `, "Coffee3");
 
-  const item4 = menuItem("menu-items", "./images/menu4.jpg", "menu4", `Photo by <a href="https://unsplash.com/@haberdoedas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Haberdoedas</a> on <a href="https://unsplash.com/photos/coffee-and-a-purple-smoothie-sit-on-a-table-md0RSAP2IIY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`, "Coffee4");
+  const item4 = menuItem("menu-items", menu4, "menu4", `Photo by <a href="https://unsplash.com/@haberdoedas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Haberdoedas</a> on <a href="https://unsplash.com/photos/coffee-and-a-purple-smoothie-sit-on-a-table-md0RSAP2IIY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`, "Coffee4");
   
-  const item5 = menuItem("menu-items", "./images/menu5.jpg", "menu5", `Photo by <a href="https://unsplash.com/@zhengsiting?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">克里斯汀</a> on <a href="https://unsplash.com/photos/a-glass-of-beer-on-a-table-qaLYZFTcRDM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`, "Coffee5");
+  const item5 = menuItem("menu-items", menu5, "menu5", `Photo by <a href="https://unsplash.com/@zhengsiting?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">克里斯汀</a> on <a href="https://unsplash.com/photos/a-glass-of-beer-on-a-table-qaLYZFTcRDM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`, "Coffee5");
 
-  const item6 = menuItem("menu-items", "./images/menu6.jpg", "menu6", `Photo by <a href="https://unsplash.com/@haberdoedas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Haberdoedas</a> on <a href="https://unsplash.com/photos/coffee-and-a-purple-smoothie-sit-on-a-table-md0RSAP2IIY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`, "Coffee6");
+  const item6 = menuItem("menu-items", menu6,"menu6", `Photo by <a href="https://unsplash.com/@haberdoedas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Haberdoedas</a> on <a href="https://unsplash.com/photos/coffee-and-a-purple-smoothie-sit-on-a-table-md0RSAP2IIY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`, "Coffee6");
 
   menuWrapper.append(item1, item2, item3, item4, item5, item6);
   contentDiv.appendChild(menuWrapper);
