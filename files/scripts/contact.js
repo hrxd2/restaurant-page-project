@@ -1,3 +1,6 @@
+import contactImage from "../images/nathan-dumlao-pJllO6r0pKo-unsplash.jpg";
+const contactImage = contactImage;
+
 export function loadContact(){
 
   const contentDiv = document.querySelector("#content");
@@ -19,7 +22,7 @@ export function loadContact(){
 
   const leftSection = newElem("section", "left-image");
 
-  const leftImage = newElem("img", "", "", "./images/nathan-dumlao-pJllO6r0pKo-unsplash.jpg", "restaurant");
+  const leftImage = newElem("img", "", "", contactImage, "restaurant");
 
   const figCaption = document.createElement("figcaption");
   figCaption.innerHTML = `Photo by <a href="https://unsplash.com/@nate_dumlao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nathan Dumlao</a>`; 
