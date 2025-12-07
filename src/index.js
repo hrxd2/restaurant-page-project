@@ -1,3 +1,4 @@
+import "./styles.css";
 import { pageLoad  } from "./initial-page-load.js";
 import { loadMenu } from "./menu.js";
 import { loadContact } from "./contact.js";
@@ -25,5 +26,3 @@ navButtons.addEventListener("click", (e) => {
         loadContact();
     }
 })
-
-//todo: one photo credit left to add in the contact page;

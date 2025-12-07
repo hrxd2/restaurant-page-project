@@ -1,5 +1,4 @@
-import contactImage from "../images/nathan-dumlao-pJllO6r0pKo-unsplash.jpg";
-const contactImage = contactImage;
+import contactImage from "./images/nathan-dumlao-pJllO6r0pKo-unsplash.jpg";
 
 export function loadContact(){
 

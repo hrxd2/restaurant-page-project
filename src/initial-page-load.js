@@ -1,12 +1,8 @@
-import aboutImage from "../images/about-image.jpg";
-import photo1 from "../images/photo1.jpg";
-import photo2 from "../images/photo2.jpg";
-import photo3 from "../images/photo3.jpg";
+import aboutImage from "./images/about-image.jpg";
+import photo1 from "./images/photo1.jpg";
+import photo2 from "./images/photo2.jpg";
+import photo3 from "./images/photo3.jpg";
 
-const aboutImage = aboutImage;
-const photo1 = photo1;
-const photo2 = photo2;
-const photo3 = photo3;
 
 export function pageLoad(){
   

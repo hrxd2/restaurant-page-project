@@ -1,16 +1,9 @@
-import menu1 from "../images/menu1.jpg"
-import menu2 from "../images/menu2.jpg"
-import menu3 from "../images/menu3.jpg"
-import menu4 from "../images/menu4.jpg"
-import menu5 from "../images/menu5.jpg"
-import menu6 from "../images/menu6.jpg"
-
-const menu1 = menu1;
-const menu2 = menu2;
-const menu3 = menu3;
-const menu4 = menu4;
-const menu5 = menu5;
-const menu6 = menu6;
+import menu1 from "./images/menu1.jpg"
+import menu2 from "./images/menu2.jpg"
+import menu3 from "./images/menu3.jpg"
+import menu4 from "./images/menu4.jpg"
+import menu5 from "./images/menu5.jpg"
+import menu6 from "./images/menu6.jpg"
 
 export function loadMenu(){
 
